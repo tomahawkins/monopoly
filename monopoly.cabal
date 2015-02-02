@@ -1,0 +1,36 @@
+name:    monopoly
+version: 0.0.0
+
+category: Game
+
+synopsis: Game logic for Monopoly.
+
+description: Game logic for Monopoly.
+
+author:     Tom Hawkins <tomahawkins@gmail.com>
+maintainer: Tom Hawkins <tomahawkins@gmail.com>
+
+license:      BSD3
+license-file: LICENSE
+
+homepage: http://github.com/tomahawkins/monopoly
+
+build-type:    Simple
+cabal-version: >= 1.8
+
+library
+  build-depends:
+    base       >= 4.0   && < 5.0,
+    random
+
+  exposed-modules:
+    Game.Monopoly
+
+  extensions:
+
+  ghc-options: -W -fprof-auto
+
+source-repository head
+  type:     git
+  location: git://github.com/tomahawkins/monopoly.git
+
